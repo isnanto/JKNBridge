@@ -1,0 +1,48 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+EKlaimLib
+</name>
+</assembly>
+<members>
+<member name="T:EKlaimLib.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:EKlaimLib.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:EKlaimLib.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:EKlaimLib.CBGLink.KlaimBaru(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+ <summary>
+ Methode New_Claim, Membuat klaim baru dan registrasi pasien jika belum ada.
+ </summary>
+ <param name="sURL"></param>
+ <param name="sNoKartu"></param>
+ <param name="sNosEP"></param>
+ <param name="sNoRM"></param>
+ <param name="sNamaPasien"></param>
+ <param name="sTglLahir"></param>
+ <param name="sGender"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:EKlaimLib.CBGLink.EditKlaim(System.String,System.String,System.String)">
+ <summary>
+ Methode untuk edit klaim yang sudah difinal
+ </summary>
+ <param name="surl">URL tempat web service</param>
+ <param name="sNoSEP">No. SEP yang akan di edit</param>
+ <returns></returns>
+</member>
+</members>
+</doc>
