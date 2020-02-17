@@ -1,9 +1,0 @@
-D:\Project\JKNBridge\Sisrute\bin\Debug\Sisrute.dll
-D:\Project\JKNBridge\Sisrute\bin\Debug\Sisrute.pdb
-D:\Project\JKNBridge\Sisrute\bin\Debug\Newtonsoft.Json.dll
-D:\Project\JKNBridge\Sisrute\bin\Debug\Newtonsoft.Json.xml
-D:\Project\JKNBridge\Sisrute\obj\Debug\Sisrute.dll
-D:\Project\JKNBridge\Sisrute\obj\Debug\Sisrute.pdb
-D:\Project\JKNBridge\Sisrute\obj\Debug\Sisrute.csprojAssemblyReference.cache
-D:\Project\JKNBridge\Sisrute\obj\Debug\Sisrute.csproj.CoreCompileInputs.cache
-D:\Project\JKNBridge\Sisrute\obj\Debug\Sisrute.csproj.CopyComplete
