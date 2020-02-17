@@ -64,9 +64,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.EKlaimLib.My.MySettings
+        Friend ReadOnly Property Settings() As Global.JKNBridge.EKlaimLib.My.MySettings
             Get
-                Return Global.EKlaimLib.My.MySettings.Default
+                Return Global.JKNBridge.EKlaimLib.My.MySettings.Default
             End Get
         End Property
     End Module

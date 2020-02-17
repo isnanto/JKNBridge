@@ -1,8 +1,34 @@
-﻿Imports System.Text
+﻿'====================================================================
+'  Copyright(C) 2017 Kamarudin (http://isnanto.blogspot.com/)
+' 
+'  Licensed under the Apache License, Version 2.0 (the "License"); you may Not
+'  use this file except In compliance With the License. You may obtain a copy Of
+'  the License at
+'
+'  http://www.apache.org/licenses/LICENSE-2.0
+' 
+'  Unless required by applicable law Or agreed To In writing, software
+'  distributed under the License Is distributed On an "AS IS" BASIS, WITHOUT
+'  WARRANTIES Or CONDITIONS Of ANY KIND, either express Or implied. See the
+'  License for the specific language governing permissions And limitations under
+'  the License.
+' 
+'  The latest version Of this file can be found at https://github.com/isnanto/JKNBridge
+'======================================================================
+
+Imports System.Text
 Imports System.Security.Cryptography
 
+''' <summary>
+''' Objek Kriptografi, berisi methode untuk enkripsi dan Dekripsi
+''' </summary>
 Public Class InaCrypto
-
+    ''' <summary>
+    ''' Untuk melakukan enkrip SHA256 sesuai standar keperluan bridging dengan eklaim
+    ''' </summary>
+    ''' <param name="text">Text yang akan di enkripsi</param>
+    ''' <param name="key">Kunci yang digunakan untuk enkripsi</param>
+    ''' <returns></returns>
     Public Function encrypt(text As String, key As String) As String
         Dim keys = Encoding.[Default].GetBytes(hex2bin(key))
         Dim aes As New AesCryptoServiceProvider()
@@ -32,7 +58,12 @@ Public Class InaCrypto
         End Using
     End Function
 
-    ' DECRYPT
+    ''' <summary>
+    ''' Berfungsi untuk melakukan dekripsi
+    ''' </summary>
+    ''' <param name="strencrypt">Text yang akan didekrip</param>
+    ''' <param name="key">Kunci yang digunakan untuk melakukan dekript</param>
+    ''' <returns></returns>
     Public Function decrypt(strencrypt As String, key As String) As String
         Dim encoded_str As String = strencrypt
         Dim chiper As Byte() = Convert.FromBase64String(encoded_str)

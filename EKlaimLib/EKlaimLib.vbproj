@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{FC075748-8FC6-4D21-8429-0041DCEC00C0}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>EKlaimLib</RootNamespace>
+    <RootNamespace>JKNBridge.EKlaimLib</RootNamespace>
     <AssemblyName>EKlaimLib</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Windows</MyType>
@@ -71,8 +71,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CBGLink.vb" />
+    <Compile Include="CBG50Link.vb" />
     <Compile Include="CBGResponse.vb" />
+    <Compile Include="ClsCBG50FeedBack.vb" />
+    <Compile Include="ClsCBGSend.vb" />
     <Compile Include="InaCrypto.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
