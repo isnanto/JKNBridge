@@ -1,5 +1,5 @@
 ﻿'====================================================================
-'  Copyright(C) 2017 Kamarudin (http://isnanto.blogspot.com/)
+'  Copyright(C) 2017 Isnanto (http://isnanto.blogspot.com/)
 ' 
 '  Licensed under the Apache License, Version 2.0 (the "License"); you may Not
 '  use this file except In compliance With the License. You may obtain a copy Of
