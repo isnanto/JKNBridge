@@ -12,13 +12,13 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("")>
 <Assembly: AssemblyProduct("VClaimLib")>
-<Assembly: AssemblyCopyright("Copyright ©  2020")>
+<Assembly: AssemblyCopyright("Copyright ©  2018")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
 
 'The following GUID is for the ID of the typelib if this project is exposed to COM
-<Assembly: Guid("b8ff0244-d89b-4de5-8c27-5266422ba73c")>
+<Assembly: Guid("c8ce372a-402b-4abf-8aaf-7126b2fc71e1")>
 
 ' Version information for an assembly consists of the following four values:
 '

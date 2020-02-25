@@ -125,7 +125,7 @@ namespace Sisrute
             {
                 throw new Exception("Pencarian Reseume Medis gagal. \n" +   exception.Message);
             }
-            return "";
+            //return "";
         }
 
     }
