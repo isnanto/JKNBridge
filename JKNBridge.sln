@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicareLib", "ApplicareLi
 EndProject
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "VClaimLib", "VClaimLib\VClaimLib.vbproj", "{F9E52BBE-0EAF-41C0-ABA3-7A1F9C4D3514}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApotikOnline", "ApotikOnline\ApotikOnline.csproj", "{BA9EDD74-ED3A-40EE-96FB-6CECD3D7FA6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F9E52BBE-0EAF-41C0-ABA3-7A1F9C4D3514}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9E52BBE-0EAF-41C0-ABA3-7A1F9C4D3514}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9E52BBE-0EAF-41C0-ABA3-7A1F9C4D3514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA9EDD74-ED3A-40EE-96FB-6CECD3D7FA6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9EDD74-ED3A-40EE-96FB-6CECD3D7FA6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA9EDD74-ED3A-40EE-96FB-6CECD3D7FA6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA9EDD74-ED3A-40EE-96FB-6CECD3D7FA6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

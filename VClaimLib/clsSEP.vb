@@ -2,7 +2,6 @@
 Imports System.Net
 Imports System.Text
 Imports Newtonsoft.Json
-Imports System.Text.Json
 
 Public Class SEP
 
@@ -186,7 +185,7 @@ Public Class SEP
 
         Return rsUpdateTglPulang
     End Function
-    Public Shared Function wsPurifikasi(ByVal sURL As String, sConsID As String, sSecretKey As String, sSEP As String, sNoPeserta As String, sKodeKelas As String, sTglMasuk As String) As MetaData
+    Public Shared Function wsPurifikasi(ByVal sURL As String, sConsID As String, sSecretKey As String, sSEP As String, sNoPeserta As String, sKodeKelas As String, sTglMasuk As String, sJenisPerawatan As String, sNoPasien As String) As MetaData
 
         rsPurifikasi.Code = "200"
         rsPurifikasi.Message = "Data Valid"
@@ -203,11 +202,27 @@ Public Class SEP
                     rsPurifikasi.Message = "Tgl Masuk RS tidak sesuai dengan tanggal SEP"
                 End If
 
-                If rsCariSEP.Response.JnsPelayanan = "Rawat INap" Then
+                If rsCariSEP.Response.JnsPelayanan.Equals("Rawat Inap") Then
                     If Not rsCariSEP.Response.KelasRawat.Trim.Equals(sKodeKelas) Then
                         rsPurifikasi.Code = "215"
                         rsPurifikasi.Message = "Kelas perawatan tidak sesuai dengan SEP"
                     End If
+
+                    If (sJenisPerawatan.Equals("2")) Then
+                        rsPurifikasi.Code = "217"
+                        rsPurifikasi.Message = "SEP Rawat inap tidak dapat di gunakan untuk pasien rawat jalan"
+                    End If
+
+                Else
+                    If rsCariSEP.Response.JnsPelayanan.Equals("Rawat Jalan") AndAlso sJenisPerawatan.Equals("1") Then
+                        rsPurifikasi.Code = "217"
+                        rsPurifikasi.Message = "SEP Rawat Jalan tidak dapat di gunakan untuk pasien rawat inap"
+                    End If
+                End If
+
+                If Not rsCariSEP.Response.Peserta.NoMr.Equals(sNoPasien) Then
+                    rsPurifikasi.Code = "216"
+                    rsPurifikasi.Message = "Nomor pasien SEP ini berbeda dengan data pasien"
                 End If
 
                 Return rsPurifikasi
